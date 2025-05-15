@@ -10,9 +10,14 @@
     "app:list:dev": "yarn workspace list-route run dev",
     "app:root:build": "yarn workspace root run build",
     "app:about:build": "yarn workspace about-route run build",
-    "app:list:build": "yarn workspace list-route run build"
+    "app:list:build": "yarn workspace list-route run build",
+    "dev": "concurrently \"yarn app:root:dev\" \"yarn app:about:dev\" \"yarn app:list:dev\"",
+    "build": "concurrently \"yarn app:root:build\" \"yarn app:about:build\" \"yarn app:list:build\"",
+    "lint": "concurrently \"yarn app:root:lint\" \"yarn app:about:lint\" \"yarn app:list:lint\"",
+    "preview": "concurrently \"yarn app:root:preview\" \"yarn app:about:preview\" \"yarn app:list:preview\""
   },
   "devDependencies": {
+    "concurrently": "^9.1.2",
     "prettier": "^3.5.3"
   }
 }

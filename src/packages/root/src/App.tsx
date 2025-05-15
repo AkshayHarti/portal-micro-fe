@@ -1,4 +1,3 @@
-import { Link } from 'react-router';
 import './App.css';
 
 function App() {
@@ -8,12 +7,10 @@ function App() {
       <nav>
         <ul>
           <li>
-            <Link to="/about">Go to About App</Link>
-            {/* <a href="/about">Go to About App</a> */}
+            <a href="/about">Go to About App</a>
           </li>
           <li>
-            <Link to="/list">Go to List App</Link>
-            {/* <a href="/list">Go to List App</a> */}
+            <a href="/list">Go to List App</a>
           </li>
         </ul>
       </nav>
