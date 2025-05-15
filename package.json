@@ -1,4 +1,18 @@
 {
   "name": "portal-micro-fe",
-  "packageManager": "yarn@4.9.1"
+  "packageManager": "yarn@4.9.1",
+  "workspaces": [
+    "src/packages/*"
+  ],
+  "scripts": {
+    "app:root:dev": "yarn workspace root run dev",
+    "app:about:dev": "yarn workspace about-route run dev",
+    "app:list:dev": "yarn workspace list-route run dev",
+    "app:root:build": "yarn workspace root run build",
+    "app:about:build": "yarn workspace about-route run build",
+    "app:list:build": "yarn workspace list-route run build"
+  },
+  "devDependencies": {
+    "prettier": "^3.5.3"
+  }
 }
