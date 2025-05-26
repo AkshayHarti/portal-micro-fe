@@ -19,7 +19,7 @@ RUN yarn install --immutable && yarn build
 # COPY ./src/packages/about-route/dist /app/about
 # COPY ./src/packages/list-route/dist /app/list
 
-FROM nginx:latest
+FROM nginx:latest as production
 
 COPY ./nginx.conf /etc/nginx/conf.d/default.conf
 

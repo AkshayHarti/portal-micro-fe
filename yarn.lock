@@ -559,7 +559,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@jridgewell/sourcemap-codec@npm:^1.4.10, @jridgewell/sourcemap-codec@npm:^1.4.14":
+"@jridgewell/sourcemap-codec@npm:^1.4.10, @jridgewell/sourcemap-codec@npm:^1.4.14, @jridgewell/sourcemap-codec@npm:^1.5.0":
   version: 1.5.0
   resolution: "@jridgewell/sourcemap-codec@npm:1.5.0"
   checksum: 10c0/2eb864f276eb1096c3c11da3e9bb518f6d9fc0023c78344cdc037abadc725172c70314bdb360f2d4b7bffec7f5d657ce006816bc5d4ecb35e61b66132db00c18
@@ -591,6 +591,57 @@ __metadata:
     zod: "npm:^3.23.8"
     zod-to-json-schema: "npm:^3.24.1"
   checksum: 10c0/18e49f42138303075e710b744e8ee958033b29e9a75852def3a320788bfe79128743a439189fad71ed4fd8fcc6c291ae7e38d41a22ed82585569cc6f5965e938
+  languageName: node
+  linkType: hard
+
+"@module-federation/error-codes@npm:0.8.12":
+  version: 0.8.12
+  resolution: "@module-federation/error-codes@npm:0.8.12"
+  checksum: 10c0/dd767f34cb518b4862a84c92f816ad90c44935fa33be93b25f9485bec8e40579f433c50a6b0ec23d509e1c453eb619d0a9b7b493f7df3d6a8200e9ce2690ec1e
+  languageName: node
+  linkType: hard
+
+"@module-federation/runtime-core@npm:0.6.20":
+  version: 0.6.20
+  resolution: "@module-federation/runtime-core@npm:0.6.20"
+  dependencies:
+    "@module-federation/error-codes": "npm:0.8.12"
+    "@module-federation/sdk": "npm:0.8.12"
+  checksum: 10c0/5a850220e98eb7ec17db9086655177e1eaf192b9145058e93c3c9db6a4724b48383e314223b198ba9dec5432753b6fe25075b7471c95c97f39966e51d598ec1f
+  languageName: node
+  linkType: hard
+
+"@module-federation/runtime@npm:^0.8.0":
+  version: 0.8.12
+  resolution: "@module-federation/runtime@npm:0.8.12"
+  dependencies:
+    "@module-federation/error-codes": "npm:0.8.12"
+    "@module-federation/runtime-core": "npm:0.6.20"
+    "@module-federation/sdk": "npm:0.8.12"
+  checksum: 10c0/f1f85e8cb66fba1b3e2062fdca1fb40b33f0902e990298a1aaeb3049c7a3f5466e92311fad9658db8ab449aaaa0459c1bf0b3b1ecf61962761781c3b7c3c8ce8
+  languageName: node
+  linkType: hard
+
+"@module-federation/sdk@npm:0.8.12":
+  version: 0.8.12
+  resolution: "@module-federation/sdk@npm:0.8.12"
+  dependencies:
+    isomorphic-rslog: "npm:0.0.7"
+  checksum: 10c0/8e8867d2520d0b63db37746821da6969a968a4661c71e199c9ef3e4a3af9fb667abcc2e99e30ca4c06cf46b7c67a9ec089754f1a12775f76c062954f56095b09
+  languageName: node
+  linkType: hard
+
+"@module-federation/vite@npm:^1.3.0":
+  version: 1.3.0
+  resolution: "@module-federation/vite@npm:1.3.0"
+  dependencies:
+    "@module-federation/runtime": "npm:^0.8.0"
+    "@rollup/pluginutils": "npm:^5.1.0"
+    defu: "npm:^6.1.4"
+    estree-walker: "npm:^2"
+    magic-string: "npm:^0.30.11"
+    pathe: "npm:^1.1.2"
+  checksum: 10c0/a929e869aa4c4bd3552c04430b427a62679e0f0df8c5aab554031fe3dcc180ad6acb5d5ad23fd05935f0b994b8051b80d2db094490c64d2f198af54326a47c3f
   languageName: node
   linkType: hard
 
@@ -647,6 +698,22 @@ __metadata:
   version: 0.11.0
   resolution: "@pkgjs/parseargs@npm:0.11.0"
   checksum: 10c0/5bd7576bb1b38a47a7fc7b51ac9f38748e772beebc56200450c4a817d712232b8f1d3ef70532c80840243c657d491cf6a6be1e3a214cff907645819fdc34aadd
+  languageName: node
+  linkType: hard
+
+"@rollup/pluginutils@npm:^5.1.0":
+  version: 5.1.4
+  resolution: "@rollup/pluginutils@npm:5.1.4"
+  dependencies:
+    "@types/estree": "npm:^1.0.0"
+    estree-walker: "npm:^2.0.2"
+    picomatch: "npm:^4.0.2"
+  peerDependencies:
+    rollup: ^1.20.0||^2.0.0||^3.0.0||^4.0.0
+  peerDependenciesMeta:
+    rollup:
+      optional: true
+  checksum: 10c0/6d58fbc6f1024eb4b087bc9bf59a1d655a8056a60c0b4021d3beaeec3f0743503f52467fd89d2cf0e7eccf2831feb40a05ad541a17637ea21ba10b21c2004deb
   languageName: node
   linkType: hard
 
@@ -831,7 +898,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/estree@npm:1.0.7, @types/estree@npm:^1.0.6":
+"@types/estree@npm:1.0.7, @types/estree@npm:^1.0.0, @types/estree@npm:^1.0.6":
   version: 1.0.7
   resolution: "@types/estree@npm:1.0.7"
   checksum: 10c0/be815254316882f7c40847336cd484c3bc1c3e34f710d197160d455dc9d6d050ffbf4c3bc76585dba86f737f020ab20bdb137ebe0e9116b0c86c7c0342221b8c
@@ -1388,6 +1455,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"defu@npm:^6.1.4":
+  version: 6.1.4
+  resolution: "defu@npm:6.1.4"
+  checksum: 10c0/2d6cc366262dc0cb8096e429368e44052fdf43ed48e53ad84cc7c9407f890301aa5fcb80d0995abaaf842b3949f154d060be4160f7a46cb2bc2f7726c81526f5
+  languageName: node
+  linkType: hard
+
 "depd@npm:2.0.0, depd@npm:^2.0.0":
   version: 2.0.0
   resolution: "depd@npm:2.0.0"
@@ -1728,6 +1802,13 @@ __metadata:
   version: 5.3.0
   resolution: "estraverse@npm:5.3.0"
   checksum: 10c0/1ff9447b96263dec95d6d67431c5e0771eb9776427421260a3e2f0fdd5d6bd4f8e37a7338f5ad2880c9f143450c9b1e4fc2069060724570a49cf9cf0312bd107
+  languageName: node
+  linkType: hard
+
+"estree-walker@npm:^2, estree-walker@npm:^2.0.2":
+  version: 2.0.2
+  resolution: "estree-walker@npm:2.0.2"
+  checksum: 10c0/53a6c54e2019b8c914dc395890153ffdc2322781acf4bd7d1a32d7aedc1710807bdcd866ac133903d5629ec601fbb50abe8c2e5553c7f5a0afdd9b6af6c945af
   languageName: node
   linkType: hard
 
@@ -2281,6 +2362,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"isomorphic-rslog@npm:0.0.7":
+  version: 0.0.7
+  resolution: "isomorphic-rslog@npm:0.0.7"
+  checksum: 10c0/525b8155fc6d0e3c3c0ee44ec3a8f2d683c923365416d13a2f2bd550ba70d3fd1b5be73f88cd69f0af6c21bd8d26c90f73e2a9cf9d4889bbecabb8b0d2f93de2
+  languageName: node
+  linkType: hard
+
 "jackspeak@npm:^3.1.2":
   version: 3.4.3
   resolution: "jackspeak@npm:3.4.3"
@@ -2433,6 +2521,15 @@ __metadata:
   dependencies:
     yallist: "npm:^3.0.2"
   checksum: 10c0/89b2ef2ef45f543011e38737b8a8622a2f8998cddf0e5437174ef8f1f70a8b9d14a918ab3e232cb3ba343b7abddffa667f0b59075b2b80e6b4d63c3de6127482
+  languageName: node
+  linkType: hard
+
+"magic-string@npm:^0.30.11":
+  version: 0.30.17
+  resolution: "magic-string@npm:0.30.17"
+  dependencies:
+    "@jridgewell/sourcemap-codec": "npm:^1.5.0"
+  checksum: 10c0/16826e415d04b88378f200fe022b53e638e3838b9e496edda6c0e086d7753a44a6ed187adc72d19f3623810589bf139af1a315541cd6a26ae0771a0193eaf7b8
   languageName: node
   linkType: hard
 
@@ -2805,6 +2902,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"pathe@npm:^1.1.2":
+  version: 1.1.2
+  resolution: "pathe@npm:1.1.2"
+  checksum: 10c0/64ee0a4e587fb0f208d9777a6c56e4f9050039268faaaaecd50e959ef01bf847b7872785c36483fa5cdcdbdfdb31fef2ff222684d4fc21c330ab60395c681897
+  languageName: node
+  linkType: hard
+
 "picocolors@npm:^1.1.1":
   version: 1.1.1
   resolution: "picocolors@npm:1.1.1"
@@ -2837,6 +2941,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "portal-micro-fe@workspace:."
   dependencies:
+    "@module-federation/vite": "npm:^1.3.0"
     concurrently: "npm:^9.1.2"
     prettier: "npm:^3.5.3"
   languageName: unknown

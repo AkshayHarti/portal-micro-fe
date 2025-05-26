@@ -17,6 +17,7 @@
     "preview": "concurrently \"yarn app:root:preview\" \"yarn app:about:preview\" \"yarn app:list:preview\""
   },
   "devDependencies": {
+    "@module-federation/vite": "^1.3.0",
     "concurrently": "^9.1.2",
     "prettier": "^3.5.3"
   }
